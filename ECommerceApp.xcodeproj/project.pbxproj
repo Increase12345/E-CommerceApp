@@ -14,6 +14,7 @@
 		4060CED72A3F8F9700E046B5 /* ECommerceAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060CED62A3F8F9700E046B5 /* ECommerceAppTests.swift */; };
 		4060CEE12A3F8F9700E046B5 /* ECommerceAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060CEE02A3F8F9700E046B5 /* ECommerceAppUITests.swift */; };
 		4060CEE32A3F8F9700E046B5 /* ECommerceAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060CEE22A3F8F9700E046B5 /* ECommerceAppUITestsLaunchTests.swift */; };
+		4060CEF12A3FE8C900E046B5 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060CEF02A3FE8C900E046B5 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		4060CEDC2A3F8F9700E046B5 /* ECommerceAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECommerceAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4060CEE02A3F8F9700E046B5 /* ECommerceAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECommerceAppUITests.swift; sourceTree = "<group>"; };
 		4060CEE22A3F8F9700E046B5 /* ECommerceAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECommerceAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4060CEF02A3FE8C900E046B5 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,8 @@
 		4060CEC42A3F8F9500E046B5 /* ECommerceApp */ = {
 			isa = PBXGroup;
 			children = (
+				4060CF2C2A42413800E046B5 /* Components */,
+				4060CEEF2A3FE8AF00E046B5 /* Models */,
 				4060CEC52A3F8F9500E046B5 /* ECommerceAppApp.swift */,
 				4060CEC72A3F8F9500E046B5 /* ContentView.swift */,
 				4060CEC92A3F8F9700E046B5 /* Assets.xcassets */,
@@ -125,6 +129,21 @@
 				4060CEE22A3F8F9700E046B5 /* ECommerceAppUITestsLaunchTests.swift */,
 			);
 			path = ECommerceAppUITests;
+			sourceTree = "<group>";
+		};
+		4060CEEF2A3FE8AF00E046B5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4060CEF02A3FE8C900E046B5 /* Product.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4060CF2C2A42413800E046B5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +278,7 @@
 			files = (
 				4060CEC82A3F8F9500E046B5 /* ContentView.swift in Sources */,
 				4060CEC62A3F8F9500E046B5 /* ECommerceAppApp.swift in Sources */,
+				4060CEF12A3FE8C900E046B5 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
