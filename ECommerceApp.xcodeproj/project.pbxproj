@@ -19,6 +19,9 @@
 		4060CF302A42460100E046B5 /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060CF2F2A42460100E046B5 /* ProductCardView.swift */; };
 		4060CF322A42461D00E046B5 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060CF312A42461D00E046B5 /* SearchView.swift */; };
 		4060CF342A4247D000E046B5 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060CF332A4247D000E046B5 /* CartManager.swift */; };
+		4060CF362A42501700E046B5 /* CartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060CF352A42501700E046B5 /* CartButtonView.swift */; };
+		4060CF392A4257A500E046B5 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060CF382A4257A500E046B5 /* HomePageView.swift */; };
+		4060CF3B2A425A4300E046B5 /* AppBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060CF3A2A425A4300E046B5 /* AppBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		4060CF2F2A42460100E046B5 /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
 		4060CF312A42461D00E046B5 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		4060CF332A4247D000E046B5 /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		4060CF352A42501700E046B5 /* CartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButtonView.swift; sourceTree = "<group>"; };
+		4060CF382A4257A500E046B5 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		4060CF3A2A425A4300E046B5 /* AppBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +110,10 @@
 		4060CEC42A3F8F9500E046B5 /* ECommerceApp */ = {
 			isa = PBXGroup;
 			children = (
+				4060CF372A42576000E046B5 /* View */,
 				4060CF2C2A42413800E046B5 /* Components */,
 				4060CEEF2A3FE8AF00E046B5 /* Models */,
 				4060CEC52A3F8F9500E046B5 /* ECommerceAppApp.swift */,
-				4060CEC72A3F8F9500E046B5 /* ContentView.swift */,
 				4060CEC92A3F8F9700E046B5 /* Assets.xcassets */,
 				4060CECB2A3F8F9700E046B5 /* Preview Content */,
 				4060CF332A4247D000E046B5 /* CartManager.swift */,
@@ -154,8 +160,19 @@
 				4060CF2D2A4241B400E046B5 /* ImageSliderView.swift */,
 				4060CF2F2A42460100E046B5 /* ProductCardView.swift */,
 				4060CF312A42461D00E046B5 /* SearchView.swift */,
+				4060CF352A42501700E046B5 /* CartButtonView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		4060CF372A42576000E046B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4060CEC72A3F8F9500E046B5 /* ContentView.swift */,
+				4060CF382A4257A500E046B5 /* HomePageView.swift */,
+				4060CF3A2A425A4300E046B5 /* AppBarView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,12 +305,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4060CF362A42501700E046B5 /* CartButtonView.swift in Sources */,
 				4060CEC82A3F8F9500E046B5 /* ContentView.swift in Sources */,
 				4060CF2E2A4241B400E046B5 /* ImageSliderView.swift in Sources */,
 				4060CF342A4247D000E046B5 /* CartManager.swift in Sources */,
+				4060CF3B2A425A4300E046B5 /* AppBarView.swift in Sources */,
 				4060CEC62A3F8F9500E046B5 /* ECommerceAppApp.swift in Sources */,
 				4060CEF12A3FE8C900E046B5 /* Product.swift in Sources */,
 				4060CF322A42461D00E046B5 /* SearchView.swift in Sources */,
+				4060CF392A4257A500E046B5 /* HomePageView.swift in Sources */,
 				4060CF302A42460100E046B5 /* ProductCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
