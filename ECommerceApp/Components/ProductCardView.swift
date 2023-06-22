@@ -25,6 +25,7 @@ struct ProductCardView: View {
         
                     Text(product.name)
                         .font(.headline)
+                        .foregroundColor(.black)
                         .padding(.vertical, 1)
                     
                     Text(product.supplier)
@@ -33,6 +34,7 @@ struct ProductCardView: View {
                         .padding(.vertical, 0.5)
                     
                     Text("$ \(product.price)")
+                        .foregroundColor(.black)
                         .bold()
                 }
                 

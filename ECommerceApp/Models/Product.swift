@@ -18,9 +18,9 @@ struct Product: Identifiable {
 
 var productList = [
     Product(name: "Leather Couch", image: "fn1", description: "description", supplier: "IKEA", price: 350),
-    Product(name: "Nice Couch", image: "fn1", description: "description", supplier: "Wallmart", price: 350),
-    Product(name: "Grau Couch", image: "fn1", description: "description", supplier: "IKEA", price: 350),
-    Product(name: "Outdoor Couch", image: "fn1", description: "description", supplier: "Home Depot", price: 350),
-    Product(name: "Green Couch", image: "fn1", description: "description", supplier: "IKEA", price: 350),
-    Product(name: "Beautiful Couch", image: "fn1", description: "description", supplier: "Wallmart", price: 350)
+    Product(name: "Nice Couch", image: "fn2", description: "description", supplier: "Wallmart", price: 350),
+    Product(name: "Grau Couch", image: "fn3", description: "description", supplier: "IKEA", price: 350),
+    Product(name: "Outdoor Couch", image: "fn4", description: "description", supplier: "Home Depot", price: 350),
+    Product(name: "Green Couch", image: "fn5", description: "description", supplier: "IKEA", price: 350),
+    Product(name: "Beautiful Couch", image: "fn6", description: "description", supplier: "Wallmart", price: 350)
 ]

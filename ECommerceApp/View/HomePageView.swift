@@ -11,13 +11,43 @@ struct HomePageView: View {
     @EnvironmentObject var cartManager: CartManager
     
     var body: some View {
-        ZStack(alignment: .top) {
-            Color.white
-                .ignoresSafeArea()
-            
-            VStack {
-                VStack(alignment: .leading) {
+        NavigationStack {
+            ZStack(alignment: .top) {
+                Color.white
+                    .ignoresSafeArea()
+                
+                VStack {
                     AppBarView()
+                    
+                    SearchView()
+                    
+                    ImageSliderView()
+                    
+                    HStack {
+                        Text("New Rivals")
+                            .font(.title2)
+                            .fontWeight(.medium)
+                        
+                        Spacer()
+                        
+                        Image(systemName: "circle.grid.2x2.fill")
+                            .foregroundColor(Color("kPrimary"))
+                    }
+                    .padding()
+                    
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(spacing: 10) {
+                            ForEach(productList, id: \.id) { product in
+                                NavigationLink {
+                                    Text(product.name)
+                                } label: {
+                                    ProductCardView(product: product)
+                                        .environmentObject(cartManager)
+                                }
+                            }
+                        }
+                        .padding(.horizontal)
+                    }
                 }
             }
         }
