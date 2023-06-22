@@ -51,6 +51,7 @@ struct HomePageView: View {
                 }
             }
         }
+        .environmentObject(cartManager)
     }
 }
 
