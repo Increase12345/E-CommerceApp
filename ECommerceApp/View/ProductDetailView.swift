@@ -19,7 +19,7 @@ struct ProductDetailView: View {
                     ZStack(alignment: .topTrailing) {
                         Image(product.image)
                             .resizable()
-                            //.scaledToFit()
+                            //.scaledToFill()
                             .frame(height: 300)
                         
                         Image(systemName: "heart.fill")
@@ -61,7 +61,48 @@ struct ProductDetailView: View {
                             .font(.title3)
                             .fontWeight(.medium)
                         Text(product.description)
+                        
+                        Spacer()
+                        
+                        HStack(alignment: .top) {
+                            VStack(alignment: .leading) {
+                                Text("Size")
+                                    .font(.system(size: 18))
+                                    .fontWeight(.semibold)
+                                VStack(alignment: .leading) {
+                                    Text("Height: \(product.height)")
+                                    Text("Width: \(product.width)")
+                                    Text("Diameter: \(product.diameter)")
+                                }
+                                .foregroundColor(.secondary)
+                            }
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            
+                            Spacer()
+                            
+                            VStack(alignment: .leading) {
+                                Text("Colors")
+                                    .font(.system(size: 18))
+                                    .fontWeight(.semibold)
+                                
+                                Text("Blue")
+                                    .foregroundColor(.blue)
+                                Text("Black")
+                                    .foregroundColor(.black)
+                                Text("Off White")
+                                    .foregroundColor(.secondary)
+                            }
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        }
+                        .padding(.vertical)
+                        
+                        PaymentButtonView(action: {})
+                            .frame(width: .infinity, height: 35)
                     }
+                    .padding()
+                    .background(.white)
+                    .cornerRadius(20)
+                    .offset(y: -30)
                 }
             }
         }
