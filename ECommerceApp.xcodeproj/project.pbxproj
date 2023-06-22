@@ -25,6 +25,7 @@
 		4060CF3D2A44C96D00E046B5 /* CartProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060CF3C2A44C96D00E046B5 /* CartProductView.swift */; };
 		4060CF3F2A44CB6F00E046B5 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060CF3E2A44CB6F00E046B5 /* CartView.swift */; };
 		4060CF412A44CE8300E046B5 /* PaymentButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060CF402A44CE8300E046B5 /* PaymentButtonView.swift */; };
+		4060CF432A44D2C700E046B5 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060CF422A44D2C700E046B5 /* ProductDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		4060CF3C2A44C96D00E046B5 /* CartProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartProductView.swift; sourceTree = "<group>"; };
 		4060CF3E2A44CB6F00E046B5 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		4060CF402A44CE8300E046B5 /* PaymentButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentButtonView.swift; sourceTree = "<group>"; };
+		4060CF422A44D2C700E046B5 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 				4060CEC72A3F8F9500E046B5 /* ContentView.swift */,
 				4060CF382A4257A500E046B5 /* HomePageView.swift */,
 				4060CF3E2A44CB6F00E046B5 /* CartView.swift */,
+				4060CF422A44D2C700E046B5 /* ProductDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4060CF362A42501700E046B5 /* CartButtonView.swift in Sources */,
+				4060CF432A44D2C700E046B5 /* ProductDetailView.swift in Sources */,
 				4060CEC82A3F8F9500E046B5 /* ContentView.swift in Sources */,
 				4060CF2E2A4241B400E046B5 /* ImageSliderView.swift in Sources */,
 				4060CF342A4247D000E046B5 /* CartManager.swift in Sources */,
