@@ -21,25 +21,23 @@ struct ContentView: View {
         TabView(selection: $currentTab) {
             
             HomePageView()
-            
-            Text("Search View")
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background()
+                .tag(Tab.Home)
+            
+            SearchView()
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .tag(Tab.Search)
             
             Text("Notifications View")
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background()
                 .tag(Tab.Notifications)
             
-            Text("Cart View")
+            CartView()
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background()
                 .tag(Tab.Cart)
             
             Text("Profile View")
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background()
                 .tag(Tab.Profile)
         }
         .overlay(

@@ -45,17 +45,38 @@ struct ProductDetailView: View {
                         }
                         .padding(.vertical)
                         
-                        HStack(spacing: 10) {
-                            ForEach(0..<5, id: \.self) { index in
-                                Image(systemName: "star.fill")
-                                    .resizable()
-                                    .frame(width: 20, height: 20)
-                                    .foregroundColor(.yellow)
+                        HStack {
+                            HStack(spacing: 10) {
+                                ForEach(0..<5, id: \.self) { index in
+                                    Image(systemName: "star.fill")
+                                        .resizable()
+                                        .frame(width: 20, height: 20)
+                                        .foregroundColor(.yellow)
+                                }
+                                Text("(4.5)")
+                                    .foregroundColor(.secondary)
                             }
-                            Text("(4.5)")
-                                .foregroundColor(.secondary)
+                            .padding(.vertical)
+                            
+                            Spacer()
+                            
+                            HStack {
+                                Button {
+                                    
+                                } label: {
+                                    Image(systemName: "minus.square")
+                                }
+                                
+                                Text("1")
+                                
+                                Button {
+                                    
+                                } label: {
+                                    Image(systemName: "plus.square.fill")
+                                        .foregroundColor(Color("kPrimary"))
+                                }
+                            }
                         }
-                        .padding(.vertical)
                         
                         Text("Description")
                             .font(.title3)
@@ -80,19 +101,18 @@ struct ProductDetailView: View {
                             
                             Spacer()
                             
-                            VStack(alignment: .leading) {
+                            VStack(alignment: .trailing) {
                                 Text("Colors")
                                     .font(.system(size: 18))
                                     .fontWeight(.semibold)
                                 
-                                Text("Blue")
-                                    .foregroundColor(.blue)
-                                Text("Black")
-                                    .foregroundColor(.black)
-                                Text("Off White")
-                                    .foregroundColor(.secondary)
+                                HStack {
+                                    ColorDotView(color: .blue)
+                                    ColorDotView(color: .black)
+                                    ColorDotView(color: .green)
+                                }
                             }
-                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .frame(maxWidth: .infinity, alignment: .trailing)
                         }
                         .padding(.vertical)
                         
@@ -113,5 +133,15 @@ struct ProductDetailView: View {
 struct ProductDetailView_Previews: PreviewProvider {
     static var previews: some View {
         ProductDetailView(product: productList[4])
+    }
+}
+
+struct ColorDotView: View {
+    let color: Color
+    
+    var body: some View {
+        color
+            .frame(width: 25, height: 25)
+            .clipShape(Circle())
     }
 }

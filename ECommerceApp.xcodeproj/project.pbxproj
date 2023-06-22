@@ -26,6 +26,7 @@
 		4060CF3F2A44CB6F00E046B5 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060CF3E2A44CB6F00E046B5 /* CartView.swift */; };
 		4060CF412A44CE8300E046B5 /* PaymentButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060CF402A44CE8300E046B5 /* PaymentButtonView.swift */; };
 		4060CF432A44D2C700E046B5 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060CF422A44D2C700E046B5 /* ProductDetailView.swift */; };
+		4060CF452A44E23700E046B5 /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060CF442A44E23700E046B5 /* ProductsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		4060CF3E2A44CB6F00E046B5 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		4060CF402A44CE8300E046B5 /* PaymentButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentButtonView.swift; sourceTree = "<group>"; };
 		4060CF422A44D2C700E046B5 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		4060CF442A44E23700E046B5 /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 				4060CF382A4257A500E046B5 /* HomePageView.swift */,
 				4060CF3E2A44CB6F00E046B5 /* CartView.swift */,
 				4060CF422A44D2C700E046B5 /* ProductDetailView.swift */,
+				4060CF442A44E23700E046B5 /* ProductsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				4060CF3D2A44C96D00E046B5 /* CartProductView.swift in Sources */,
 				4060CF392A4257A500E046B5 /* HomePageView.swift in Sources */,
 				4060CF302A42460100E046B5 /* ProductCardView.swift in Sources */,
+				4060CF452A44E23700E046B5 /* ProductsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
