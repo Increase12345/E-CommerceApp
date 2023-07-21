@@ -1,5 +1,5 @@
 <h1 align="center">E-Commerce Store</h1>
-<h3 align="center">Furniture online store</h3>
+<h3 align="center">Furniture online store, SwiftUI</h3>
 
 <p align="center">
   <img src="https://github.com/Increase12345/E-CommerceApp/assets/98255061/6831b08a-3610-4e2e-8af9-025e64097015" width="200" />
